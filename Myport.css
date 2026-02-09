@@ -140,6 +140,13 @@ h2 {
     font-size: 2rem;
     color: var(--primary-color);
 }
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+
 
 /* About Section */
 .about-details {
@@ -156,6 +163,11 @@ h2 {
     border-radius: 5px;
     margin: 10px;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* Skills Section */
 .skills-list {
@@ -361,4 +373,15 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+  .projects {
+    flex-direction: column;
+  }
+  nav {
+    font-size: 18px;
+  }
 }
